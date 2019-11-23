@@ -1,8 +1,8 @@
 import os
 import csv
 
-directory= '/Users/pedroguillermarnanzcoll/Documents/AI/Arquitectura/csv/1260'
-directory_trans='/Users/pedroguillermarnanzcoll/Documents/AI/Arquitectura/csv/1260_translated'
+directory= '/Users/pedroguillermarnanzcoll/Documents/AI/repo/dataset/1260/1260'
+directory_trans='/Users/pedroguillermarnanzcoll/Documents/AI/repo/dataset/1260/1260_translated'
 xmaxglobal=0
 ymaxglobal=0
 zmaxglobal=0
@@ -25,13 +25,7 @@ for filename in os.listdir(directory):
 						x= float(coordenadas[0])
 						y=float(coordenadas[1])
 						z=float(coordenadas[2])
-						if x>xmaxglobal: xmaxglobal=x
-						if y>ymaxglobal: ymaxglobal=y
-						if z>zmaxglobal: zmaxglobal=z
 
-						if x<xminglobal: xminglobal=x
-						if y<yminglobal: yminglobal=y
-						if z<zminglobal: zminglobal=z
 						csv_out.writerow([0,0,0]+row[1:])
 					else:
 						print(index)

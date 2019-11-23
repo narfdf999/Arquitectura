@@ -2,8 +2,8 @@ import os
 import csv
 
 
-directory_norm='/Users/pedroguillermarnanzcoll/Documents/AI/Arquitectura/csv/1260_normalized'
-directory_trans='/Users/pedroguillermarnanzcoll/Documents/AI/Arquitectura/csv/1260_translated'
+directory_norm='/Users/pedroguillermarnanzcoll/Documents/AI/repo/dataset/1260/1260_normalized'
+directory_trans='/Users/pedroguillermarnanzcoll/Documents/AI/repo/dataset/1260/1260_translated'
 xmaxglobal=0
 ymaxglobal=0
 zmaxglobal=0
