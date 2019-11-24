@@ -35,8 +35,8 @@ for filename in os.listdir(directory_trans):
 					csv_out = csv.writer(file_out, delimiter=",")
 					for row in csv_in:
 						x= 2*((float(row[0])-xminglobal)/(xmaxglobal-xminglobal))-1
-						y= 2*((float(row[0])-yminglobal)/(ymaxglobal-yminglobal))-1
-						z= 2*((float(row[0])-zminglobal)/(zmaxglobal-zminglobal))-1
+						y= 2*((float(row[1])-yminglobal)/(ymaxglobal-yminglobal))-1
+						z= 2*((float(row[2])-zminglobal)/(zmaxglobal-zminglobal))-1
 						csv_out.writerow([x,y,z] + row[3:])
 					
 		continue
